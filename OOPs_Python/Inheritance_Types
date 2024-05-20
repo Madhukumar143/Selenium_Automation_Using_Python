@@ -1,0 +1,20 @@
+Types of inheritance
+
+1. Single Inheritance :
+       inheritance from single parent to single child (class A -> class B)
+
+2. Multilevel Inheritance :
+       inheritance from parent -> child -> Grand child (Class A -> Class B -> Class C)
+
+3. Hierarchical Inheritance :
+       two or more Children for single parent (class A -> Class B && same Class A -> Class C)
+
+4. Multiple Inheritance :
+       Single child for more than one parent (Class A , Class B , Class C (A,B) #Child of both A abd B
+
+5. Hybrid Inheritance :
+       Combination of Hierarchical and Multiple.
+       Class A, Class B(A)  , Class C(A) , Class D(B,c)
+       Using object from Class D we can access all variable fromm all classes A,B,C,D
+
+
