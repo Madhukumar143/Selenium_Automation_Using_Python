@@ -13,6 +13,6 @@ print()
 def employee(name,experience,location):
     print(name, experience,location)
 
-d = {"name":"Madhu", "experience":3,"location":"Nellore"}
+m = {"name":"Madhu", "experience":3,"location":"Nellore"}
 
-employee(**d)
+employee(**m)
