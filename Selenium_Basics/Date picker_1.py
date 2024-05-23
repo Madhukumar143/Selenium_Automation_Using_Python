@@ -16,18 +16,19 @@ driver.get("https://jqueryui.com/datepicker/")
 # Maximize the window opened
 driver.maximize_window()
 Actual_month = "March"
-Actual_year = "2002"
+Actual_year = "2022"
 Actual_date = "3"
 driver.switch_to.frame(0)
 #driver.find_element(By.XPATH,"//input[@id='datepicker']").send_keys("01/08/2024")
-#driver.find_element(By.XPATH,"//input[@id='datepicker']").send_keys(Keys.ENTER)
+driver.find_element(By.XPATH,"//input[@id='datepicker']").click()
 
-date_1 = driver.find_element(By.XPATH,"//input[@id='datepicker']")
-date_1.send_keys("04/20/2012")
+#date_1 = driver.find_element(By.XPATH,"//input[@id='datepicker']")
+'''date_1.send_keys("04/20/2012")
 date_1.send_keys(Keys.ENTER)
 time.sleep(3)
 
-'''time.sleep(2)
+'''
+time.sleep(2)
 initial_month = driver.find_element(By.XPATH, "//span[@class='ui-datepicker-month']").text
 initial_year = driver.find_element(By.XPATH, "//span[@class='ui-datepicker-year']").text
 
@@ -71,4 +72,4 @@ for i in range (1,6):
         Compare_Date = Date.text
         if Compare_Date == Actual_date :
             Date.click()
-time.sleep(8)'''
+time.sleep(8)
