@@ -14,8 +14,8 @@ print(datetime)
 Date = "15"
 ch_option =Options()
 ch_option.add_experimental_option('detach', True)
-ser_obj = Service("D:\\Automation\\Selenium\\Python_Project_SDET\\chromedriver.exe")
-driver = webdriver.Chrome(service = ser_obj, options=ch_option)
+
+driver = webdriver.Chrome(ch_option)
 
 driver.get("https://dummyticket.com/dummy-ticket-for-visa-application/")
 
