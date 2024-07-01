@@ -20,4 +20,3 @@ driver.find_element(By.XPATH,"(//i[@class='oxd-icon bi-trash'])[2]").click()
 a = driver.find_element(By.XPATH,"//div[@role='document']")
 print(a)
 time.sleep(3)
-

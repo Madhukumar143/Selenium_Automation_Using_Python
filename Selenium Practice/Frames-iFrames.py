@@ -12,8 +12,9 @@ datetime = datetime.now()
 print(datetime)
 ch_option =Options()
 driver = webdriver.Chrome(ch_option)
+driver.implicitly_wait(10)
 
-class Demo_Frames():
+'''class Demo_Frames():
     def demo_iframes(self):
         driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe_frameborder_css")
         driver.switch_to.frame('iframeResult')
@@ -23,4 +24,12 @@ class Demo_Frames():
         time.sleep(2)
 
 diframe = Demo_Frames()
-diframe.demo_iframes()
+diframe.demo_iframes()'''
+
+'''driver.get("https://docs.oracle.com/javase/8/docs/api/")
+driver.switch_to.frame("classFrame")
+driver.find_element(By.LINK_TEXT,"Description").click()'''
+driver.get("https://blogpendingtasks.blogspot.com/p/switchtoframeusingwebelement.html")
+driver.switch_to.frame(driver.find_element(By.XPATH,"//iframe[@title='arunmotoori']"))
+driver.find_element(By.LINK_TEXT,"Home").click()
+time.sleep(3)
