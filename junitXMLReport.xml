@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="6" time="0.264" timestamp="2024-07-31T08:01:01.407812+05:30" hostname="DESKTOP-9CF375J"><testcase classname="Pytest_Practice.test_Assertions in pytest" name="test_method_one" time="0.107" /><testcase classname="Pytest_Practice.test_Assertions in pytest" name="test_method_two" time="0.001"><failure message="AssertionError: This will  be printed as a is greater than b&#10;assert 5 &lt; 4">def test_method_two():
+        a = 5
+        b = 4
+&gt;       assert a &lt; b, "This will  be printed as a is greater than b"
+E       AssertionError: This will  be printed as a is greater than b
+E       assert 5 &lt; 4
+
+Pytest_Practice\test_Assertions in pytest.py:15: AssertionError</failure></testcase><testcase classname="Pytest_Practice.test_Assertions in pytest" name="test_method_three" time="0.001" /><testcase classname="Pytest_Practice.test_sample" name="test_method_one" time="0.001" /><testcase classname="Pytest_Practice.test_sample" name="test_method_two" time="0.001" /><testcase classname="Pytest_Practice.test_sample" name="test_method_three" time="0.001" /></testsuite></testsuites>
