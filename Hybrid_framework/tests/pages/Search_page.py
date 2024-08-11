@@ -1,4 +1,4 @@
-from pages.Base_page import Basepage
+from Hybrid_framework.tests.pages.Base_page import Basepage
 
 class Search_page(Basepage):
 

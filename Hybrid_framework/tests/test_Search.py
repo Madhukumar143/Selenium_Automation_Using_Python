@@ -1,11 +1,7 @@
-import time
-
 import pytest
-from selenium.webdriver.common.by import By
-from selenium import webdriver
 
-from pages.Home_page import Home_page
-from pages.Search_page import Search_page
+from Hybrid_framework.tests.pages.Home_page import Home_page
+
 
 @pytest.mark.usefixtures("setup_and_teardown","log_on_result")
 class Test_Search():

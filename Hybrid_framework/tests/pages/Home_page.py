@@ -1,9 +1,7 @@
-from selenium.webdriver.common.by import By
-
-from pages.Base_page import Basepage
-from pages.Login_page import Login_page
-from pages.Register_page import Register_page
-from pages.Search_page import Search_page
+from Hybrid_framework.tests.pages.Base_page import Basepage
+from Hybrid_framework.tests.pages.Login_page import Login_page
+from Hybrid_framework.tests.pages.Register_page import Register_page
+from Hybrid_framework.tests.pages.Search_page import Search_page
 
 
 class Home_page(Basepage):

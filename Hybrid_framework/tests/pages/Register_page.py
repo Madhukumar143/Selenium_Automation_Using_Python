@@ -1,6 +1,4 @@
-from selenium.webdriver.common.by import By
-
-from pages.Base_page import Basepage
+from Hybrid_framework.tests.pages.Base_page import Basepage
 
 
 class Register_page(Basepage):

@@ -1,13 +1,10 @@
 import time
-from datetime import datetime
 
 import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 
 from Hybrid_framework.tests.Basetest import Base_test
 from Hybrid_framework.tests.utilities import Excelutils
-from pages.Home_page import Home_page
+from Hybrid_framework.tests.pages.Home_page import Home_page
 
 class Test_Login(Base_test):
     @pytest.mark.parametrize("email_address,password",Excelutils.Extract_Excel_data("Excel_files/Practice.xlsx", "Sheet1"))
