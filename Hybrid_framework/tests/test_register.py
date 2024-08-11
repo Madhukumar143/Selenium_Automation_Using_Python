@@ -1,9 +1,7 @@
-from datetime import datetime
-
 import pytest
 
 from Hybrid_framework.tests.Basetest import Base_test
-from pages.Home_page import Home_page
+from Hybrid_framework.tests.pages.Home_page import Home_page
 
 @pytest.mark.usefixtures("setup_and_teardown","log_on_result")
 class Test_register(Base_test):
